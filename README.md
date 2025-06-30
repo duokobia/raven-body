@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# React TypeScript Project
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This React(NextJS) TypeScript application, developed for the Bella Oter frontend assessment, showcases my frontend development skills. It presents a responsive Raven Body Profile experience page for selecting fabrics based on customers' mood.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Profile Experience Page Snapshot
+
+Here is a snapshot of the page implemented:
+
+![Page Snapshot](./public/images/raven-body-profile-page-snapshot.png)
+
+## Features
+
+- **Responsive Design**: Built using Mobile-first design approach and adapts well to various screen sizes.
+- **Mock Data**: Mock data was used without API calls.
+
+## Technologies Used
+
+- **Framework**: NextJS 14 (App Router)
+- **Language**: TypeScript
+- **Styling**: TailwindCSS
+- **SVG Icons**: Custom SVG icons used
+- **Linting**: ESLint + Prettier
+- **Git Hooks**: Husky
+
+### Prerequisites
+
+- Node.js v18+
+- npm
+- Git
+
+## Installation
+
+To run this application locally on your machine, follow these steps:
+
+1. Clone the repository:
+
+```
+git clone https://github.com/duokobia/raven-body.git
+cd raven-body
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. Start the development server:
 
-## Learn More
+```
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+4. Open your browser by navigating to `http://localhost:3000` to view the application.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The project structure is organized as follows:
 
-## Deploy on Vercel
+```
+raven-body/
+├── husky/                  # Git hooks configuration
+│   └── (other pages)
+├── app/                    # Next.js App Router
+│   ├── components          # Reusable UI components
+│   ├── data                # Product data
+│   └── type                # Type
+|   ├── global.css          # Global CSS & Tailwind imports
+|   ├── layout.tsx          # Root layout component
+│   └── page.tsx            # Home page
+├── public/
+│   └── images              # Images
+├── gitignore               # Git files to be ignored configured here
+├── prettierrc              # Prettier configuration
+├── eslint.config.ts        # Eslint configuration
+├── ...                     # Other files
+├── package-lock.json       # Detailed dependency tree snapshot 
+├── package.json            # Packages and scripts used configuration
+├── postcss.config.js       # PostCSS configuration
+├── README.md               # Current file
+├── tailwind.config.ts      # Tailwind CSS configuration
+└──  tsconfig.json          # TypeScript configuration
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Acknowledgments
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- I extend my deepest thanks to the Bella Oter team for affording me this opportunity to demonstrate my frontend development capabilities. I would also like to acknowledge the creators of NextJS, TypeScript, Tailwind CSS, and the other libraries that were instrumental in the successful completion of this project.
