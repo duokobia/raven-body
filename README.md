@@ -20,11 +20,11 @@ Here is a snapshot of the page implemented:
 - **Framework**: NextJS 14 (App Router)
 - **Language**: TypeScript
 - **Styling**: TailwindCSS
-- **SVG Icons**: Custom SVG icons used
+- **SVG Icons**: Custom SVG icons created and used
 - **Linting**: ESLint + Prettier
 - **Git Hooks**: Husky
 
-### Prerequisites
+### Requirement
 
 - Node.js v18+
 - npm
@@ -83,6 +83,13 @@ raven-body/
 ├── tailwind.config.ts      # Tailwind CSS configuration
 └──  tsconfig.json          # TypeScript configuration
 ```
+
+
+## Time Spent
+Approximately three hours was spent implementing my ideas and writing documentation for this application.
+
+## Area for Improvement
+Given the brand style guide, I would customize the page to make it look at exactly as designed. This includes colours, typography, etc. This would make the application look more professional. I will also animate the question on the page to scroll in. Effects that will make the page more interactive would be added as well. The state management when the page is refreshed would be better handled. 
 
 ## Acknowledgments
 
